@@ -1,0 +1,338 @@
+
+
+/**
+ * Top Level Cascading Style Sheets for OV THW-CMS
+ *
+ * Includes definitions to the print layout
+ *
+ * @date 20170902
+ * @author: Stefan Joerger
+*/
+
+
+/* clear body background */
+
+body {
+    background: transparent;
+}
+
+
+/* delete background header image */
+
+#page {
+    background-image: none;
+    background-color: transparent;
+    min-width: 643px;
+}
+
+
+/* set non-fixed page width */
+
+#contentArea {
+    width: auto;
+}
+
+#contentArea div.branding {
+    height: 140px;
+    border-bottom: 20px solid #0941B0;
+}
+
+
+/* restyle keyvisual*/
+
+#keyvisualIntro,
+#keyvisual {
+    height: auto;
+}
+
+#keyvisual div.teaser,
+#keyvisualIntro div.teaser {
+    background: transparent;
+    position: relative;
+}
+
+#keyvisual div.teaser div.teaserbg h2,
+#keyvisualIntro div.teaser div.teaserbg h2 {
+    color: #003399;
+    margin: 0 0 5px 0;
+}
+
+#keyvisual div.teaser div.teaserbg h2 a,
+#keyvisualIntro div.teaser div.teaserbg h2 a {
+    color: #003399;
+}
+
+#keyvisual div.teaser div.teaserbg p,
+#keyvisualIntro div.teaser div.teaserbg p {
+    color: #202020;
+    margin: 0 0 5px 0;
+}
+
+#keyvisualSpacer {
+    margin: 10px 0;
+    height: 1px;
+}
+
+
+/* set content cols */
+
+#contentArea div.content {
+    margin: 10px 0;
+}
+
+#contentArea div.content div.contentCol,
+#contentArea div.content div.contentColFlex {
+    width: auto;
+    margin: 20px 0 0 0;
+}
+
+#contentArea div.content div.marginalCol {
+    /*    width:auto;
+        margin:20px 0 0 0;
+        float:none;*/
+    display: none;
+}
+
+#contentArea div.content div.navigationCol {
+    width: auto;
+    margin: 20px 0;
+    float: none;
+    border-top: none;
+    padding-top: 0;
+}
+
+#contentArea div.content div.navigationCol div.contentBelowMenue {
+    margin-top: 0;
+}
+
+
+/* include definitions to the web-url */
+
+div.webpath {
+    border-top: 3px solid #202020;
+    padding-top: 15px;
+}
+
+div.webpath p {
+    font-weight: bold;
+}
+
+div.webpath ul {}
+
+div.webpath ul li {
+    display: inline-block;
+    float: left;
+}
+
+footer {
+    display: none;
+}
+
+
+/* define styles to the footer address block */
+
+#contentArea div.footer {
+    margin-top: 15px;
+    border-top: 3px solid #202020;
+    padding-top: 15px;
+}
+
+#contentArea div.footer div.addressBlock {
+    display: block;
+    width: 300px;
+    float: left;
+}
+
+#contentArea div.footer p.addressHeader {
+    font-weight: bold;
+}
+
+#contentArea div.footer div.addressBlock p.address {
+    margin-bottom: 1px;
+}
+
+div.footprint {
+    margin-top: 15px;
+}
+
+div.footprint p {
+    font-size: 92.67%;
+}
+
+div.clearFloater {
+    display: block;
+    height: 0;
+    clear: both;
+    float: none;
+    visibility: hidden;
+}
+
+
+/* webpath menu */
+
+div.webpath {}
+
+div.webpath ol {}
+
+div.webpath ol li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* set fce column definitions */
+
+div.div-67right,
+div.div-67left {
+    float: left;
+    min-width: 620px;
+}
+
+div.div-50left,
+div.div-50right {
+    min-width: 310px;
+    float: left;
+}
+
+div.div-33left,
+div.div-33right {
+    min-width: 310px;
+    float: left;
+}
+
+div.div-20 {
+    min-width: 200px;
+}
+
+
+/* set print content styles */
+
+.marginalCol ul li,
+.navigationCol ul li,
+.content ul li,
+.contentCol ul li,
+.contentColFlex ul li,
+.marginalCol ul.list_arrow li,
+.navigationCol ul.list_arrow li,
+.content ul.list_arrow li,
+.contentCol ul.list_arrow li,
+.contentColFlex ul.list_arrow li,
+.marginalCol ul.list_bollen li,
+.navigationCol ul.list_bollen li,
+.content ul.list_bollen li,
+.contentCol ul.list_bollen li,
+.contentColFlex ul.list_bollen li {
+    background: transparent;
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+.marginalCol ul li ul li,
+.navigationCol ul li ul li,
+.content ul li ul li,
+.contentCol ul li ul li,
+.contentColFlex ul li ul li,
+.marginalCol ul.list_arrow li ul li,
+.navigationCol ul.list_arrow li ul li,
+.content ul.list_arrow li ul li,
+.contentCol ul.list_arrow li ul li,
+.contentColFlex ul.list_arrow li ul li,
+.marginalCol ul.list_bollen li ul li,
+.navigationCol ul.list_bollen li ul li,
+.content ul.list_bollen li ul li,
+.contentCol ul.list_bollen li ul li,
+.contentColFlex ul.list_bollen li ul li {
+    background: transparent;
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+.marginalCol ul li ul li ul li,
+.navigationCol ul li ul li ul li,
+.content ul li ul li ul li,
+.contentCol ul li ul li ul li,
+.contentColFlex ul li ul li ul li,
+.marginalCol ul.list_arrow li ul li ul li,
+.navigationCol ul.list_arrow li ul li ul li,
+.content ul.list_arrow li ul li ul li,
+.contentCol ul.list_arrow li ul li ul li,
+.contentColFlex ul.list_arrow li ul li ul li,
+.marginalCol ul.list_bollen li ul li ul li,
+.navigationCol ul.list_bollen li ul li ul li,
+.content ul.list_bollen li ul li ul li,
+.contentCol ul.list_bollen li ul li ul li,
+.contentColFlex ul.list_bollen li ul li ul li {
+    background: transparent;
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+.marginalCol ul li ul li ul li ul li,
+.navigationCol ul li ul li ul li ul li,
+.content ul li ul li ul li ul li,
+.contentCol ul li ul li ul li ul li,
+.contentColFlex ul li ul li ul li ul li,
+.marginalCol ul.list_arrow li ul li ul li ul li,
+.navigationCol ul.list_arrow li ul li ul li ul li,
+.content ul.list_arrow li ul li ul li ul li,
+.contentCol ul.list_arrow li ul li ul li ul li,
+.contentColFlex ul.list_arrow li ul li ul li ul li,
+.marginalCol ul.list_bollen li ul li ul li ul li,
+.navigationCol ul.list_bollen li ul li ul li ul li,
+.content ul.list_bollen li ul li ul li ul li,
+.contentCol ul.list_bollen li ul li ul li ul li,
+.contentColFlex ul.list_bollen li ul li ul li ul li {
+    background: transparent;
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+nav#breadcrumb {
+    display: block;
+}
+
+.TxTtNews,
+.marginalCol,
+#keyvisual,
+section.navigation,
+.gm-fullscreen-control,
+section.navigationCol,
+.services {
+    display: none;
+    width: 0;
+}
+
+#contentArea .contentCol,
+.news-single-item,
+.news-container {
+    width: 100%;
+}
+
+#contentArea,
+#pageContent section.contentwrapper {
+    padding: 0;
+    width: 100%;
+}
+
+.thw_logo {
+    background-image: url('./img/logo_thw_print.png');
+    height: 53px;
+}
+
+.thw_logo img {
+    display: none;
+}
+
+#page #contentArea header div.branding {
+    border: 0;
+    background: 0;
+}
+
+#contentArea div.branding,
+#contentArea header #pageHead {
+    height: 125px;
+}
+
